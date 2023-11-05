@@ -1,0 +1,58 @@
+
+<header *ngIf="!isSmallScreen">
+    <div class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+       <div class="container-fluid">
+        <div class="navbar-brand align-item-center d-flex">
+            <strong style="font-size: 20px; padding-left: 20px; font-style: italic;">FlipKart</strong>
+            <input type="text" class="search-bar" placeholder="&nbsp; &nbsp;search products, brands and more&nbsp; &nbsp;">
+            <span class="fa fa-search search-icon " aria-hidden="true"></span>
+        <div class="form-group">
+        </div>
+         <button class="btn btn-primary col-md-2">
+            <i style="font-size: 20px; font-style: normal;" class="Login" routerLink="/login">&nbsp;Login</i>
+        </button>
+         <button class="btn btn-primary col-md-2 ">
+            <i style="font-size: 20px; font-style: normal;" class="more dropdown-toggle ">&nbsp;More</i>
+              <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Option 1</a>
+                  <a class="dropdown-item" href="#">Option 2</a>
+                  <a class="dropdown-item" href="#">Option 3</a>
+              </div> -->
+        </button>
+        <button class="btn btn-primary col-md-3" routerLink="/cart">
+            <i style="font-size: 20px;" class="fa fa-cart-plus cart">&nbsp;Cart</i>
+        </button>
+        </div>
+       </div>
+    </div>
+</header>
+<header *ngIf="isSmallScreen">
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand text-white fw-bold " href="#">
+          Flipkart
+        </a>
+      
+        <button class="navbar-toggler" type="button"
+                (click)="toggleNavbar()">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse"
+        [ngClass]="{ 'show': navbarOpen }">
+     <ul class="navbar-nav mr-auto">
+       <li class="nav-item">
+         <a class="nav-link text-white text-center" routerLink="/product">Home</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link text-white text-center" routerLink="/login">Login</a>
+       </li>
+  
+       <li class="nav-item ">
+         <a class="nav-link text-white text-center" href="#">More</a>
+       </li>
+     </ul>
+   </div>
+  </nav>
+      
+</header>
+

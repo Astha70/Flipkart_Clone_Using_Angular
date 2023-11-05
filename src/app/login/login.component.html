@@ -1,0 +1,34 @@
+<div class="container">
+    <div *ngIf="isLogin" class="div1">
+      <h1 class="display-4">Login</h1>
+      <p class="lead">Get access to your Orders, Wishlist, and Recommendations</p>
+      <img src="//img1a.flixcart.com/www/linchpin/fk-cp-zion/img/login_img_dec4bf.png" alt="">
+    </div>
+    <div *ngIf="isLogin" class="div2">
+      <div class="form-group">
+        <input type="email" class="form-control" placeholder="Enter Email">
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" placeholder="Enter Password">
+      </div>
+      <button class="btn btn-primary btn-lg">Login</button>
+      <button class="btn btn-link" (click)="isLogin = !isLogin">New to Flipkart? Create an account</button>
+    </div>
+  </div>
+  
+  <div *ngIf="!isLogin" class="container">
+    <div class="div1">
+      <h1 class="display-4">Register</h1>
+      <p class="lead">We do not share your personal details with anyone.</p>
+      <img src="//img1a.flixcart.com/www/linchpin/fk-cp-zion/img/login_img_dec4bf.png" alt="">
+    </div>
+    <div class="div2">
+      <div class="form-group">
+        <input type="email" class="form-control" placeholder="Enter Email">
+      </div>
+      <button class="btn btn-primary btn-lg">CONTINUE</button>
+      <button class="btn btn-link" (click)="isLogin = !isLogin">Existing User?</button>
+      <a href="#" class="btn btn-link">Log in</a>
+    </div>
+  </div>
+  

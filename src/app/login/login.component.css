@@ -1,0 +1,80 @@
+ .container {
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+}
+
+.div1 {
+    background-color: #3374FF;
+    text-align: center;
+    flex: 1;
+    padding: 30px;
+}
+
+.div1 h1 {
+    color: white;
+    font-size: 1.7em;
+}
+
+.div1 p {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    font-family: 'Garamond', serif;
+}
+
+.div2 {
+    flex: 1;
+    padding: 40px;
+}
+
+.div2 .form-group {
+    padding: 10px 0;
+}
+
+.div2 input[type="email"],
+.div2 input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.div2 .btn1 {
+    width: 100%;
+    padding: 10px;
+    background-color: #fb641b;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.div2 .a1 {
+    color: #3374FF;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+button.btn.btn-primary.btn-lg {
+    width: 100%;
+}
+
+.btn1 {
+    margin-top: 10px;
+    width: 100%;
+}
+
+  
+  
+  
+  
+  
+  

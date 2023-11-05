@@ -1,0 +1,22 @@
+@import "font-awesome";
+
+.search-bar{
+    border-radius: 5px;
+    width: 800px;
+    margin-left: 20px;
+    border-color: rgb(201, 201, 200);
+    font-size: 14px;
+    padding: 5px;
+    
+}
+.search-icon{
+    position: absolute;
+    z-index: 10;
+    left: 39%;
+    top: 23px;
+    color: rgb(215, 215, 216);
+}
+
+/* .search-bar :active{
+    border: none;
+} */
