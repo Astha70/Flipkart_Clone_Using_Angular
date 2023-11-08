@@ -250,14 +250,4 @@ export class ProductComponent {
       }
     }
   ]
-  // public ProductList:any;
-  // constructor(private service:ServiceService) {}
-  // ngInit():void{
-  //   this.service.getProduct().subscribe(res =>{
-  //     this.ProductList = res;
-  //   })
-  // }
-  // filter(cat:string){
-
-  // }
 }
