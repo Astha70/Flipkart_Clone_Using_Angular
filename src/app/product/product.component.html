@@ -58,17 +58,19 @@
   </div>
   
   <!-- Product cards with product information -->
-  <div class="container" id="container1">
+  <div class="container" id="box">
     <div class="row">
-      <ng-container *ngFor="let item of ProductList">
-        <div class="card col-lg-3 col-md-4 col-sm-6 col-12">
-          <img src="{{item.image}}" alt="">
-          <h5 class="ellipsis">{{item.title}}</h5>
-          <p class="ellipsis">{{item.description}}</p>
-          <p><strong>Price:</strong> ${{item.price}}</p>
-          <button class="btn btn-primary">Add to cart</button>
-        </div>
-      </ng-container>
+        <ng-container *ngFor="let item of ProductList">
+            <div class="card col-md-3 col-sm-12 justify-content-md-center">
+                <img src="{{item.image}}" alt=""><i class="fa fa-heart-o heart" ></i>
+                <!-- doing interpolation -->
+                <h5 style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100ch;">{{item.title}}</h5>
+                <p style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100ch;">{{item.description}}</p>
+                <p><strong>Price:</strong>${{item.price}}</p>
+                <button class="btn btn-primary">Add to cart</button>
+            </div>
+        </ng-container>
     </div>
-  </div>
+</div>
+<app-footer></app-footer>
   
