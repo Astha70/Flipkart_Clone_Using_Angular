@@ -4,16 +4,16 @@
       <p class="lead">Get access to your Orders, Wishlist, and Recommendations</p>
       <img src="//img1a.flixcart.com/www/linchpin/fk-cp-zion/img/login_img_dec4bf.png" alt="">
     </div>
-    <div *ngIf="isLogin" class="div2">
+    <form *ngIf="isLogin" class="div2" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
       <div class="form-group">
-        <input type="email" class="form-control" placeholder="Enter Email">
+        <input type="email" class="form-control" placeholder="example@email.com" required>
       </div>
       <div class="form-group">
-        <input type="password" class="form-control" placeholder="Enter Password">
+        <input type="password" class="form-control" placeholder="Enter Password" minlength="6" required>
       </div>
       <button class="btn btn-primary btn-lg">Login</button>
       <button class="btn btn-link" (click)="isLogin = !isLogin">New to Flipkart? Create an account</button>
-    </div>
+    </form>
   </div>
   
   <div *ngIf="!isLogin" class="container">
@@ -24,11 +24,11 @@
     </div>
     <div class="div2">
       <div class="form-group">
-        <input type="email" class="form-control" placeholder="Enter Email">
+        <input type="email" class="form-control" placeholder="example@email.com" required>
       </div>
       <button class="btn btn-primary btn-lg">CONTINUE</button>
       <button class="btn btn-link" (click)="isLogin = !isLogin">Existing User?</button>
       <a href="#" class="btn btn-link">Log in</a>
     </div>
   </div>
-  
+  <app-footer></app-footer>
