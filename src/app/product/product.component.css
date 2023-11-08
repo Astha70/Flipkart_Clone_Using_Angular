@@ -27,7 +27,13 @@
 .card {
     padding: 20px;
     margin: 50px;
+
 }
+
+/* #container1{
+    transition: 0.3s ease-in-out;
+    transform: scale();
+} */
 
 .card img {
     width: 200px;
